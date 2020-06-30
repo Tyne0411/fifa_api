@@ -2,6 +2,7 @@ import socketio from 'socket.io';
 
 import { logger, verifyToken } from '../middlewares';
 import Room from './roomManager';
+import { fixedOrigin } from './corsFixer';
 import { host } from '../env';
 
 export default app => {
